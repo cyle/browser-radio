@@ -9,10 +9,15 @@ function ipCIDRCheck ($IP, $CIDR) {
 	return ($ip_ip_net == $ip_net);
 }
 
+$in_a_range = false;
 foreach ($ip_range_restricts as $ip_restrict) {
 	if (ipCIDRCheck($_SERVER['REMOTE_ADDR'], $ip_restrict)) {
-		die('You can only access this radio on certain subnets, sorry, lol.');
+		$in_a_range = true;
 	}
+}
+
+if (!$in_a_range) {
+	die('You can only access this radio on certain subnets, sorry, lol.');
 }
 
 ?>
