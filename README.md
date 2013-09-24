@@ -27,17 +27,17 @@ Run the `play.js` file by opening a terminal, going to wherever you dropped the 
 
 If you want to keep it going for a long time, you may want to use a program like [forever](https://github.com/nodejitsu/forever) or [pm2](https://github.com/Unitech/pm2) to manage it in the background.
 
-One that's running, just go to wherever you dropped the files via a browser. It should automatically parse your iTunes library and show a big huge list of files. Enjoy!
+Once that's running, just go to wherever you dropped the files via a browser. It should automatically parse your iTunes library and show a big huge list of files. Enjoy! (Warning: huge iTunes libraries, as in >20GB, may take awhile to parse depending on the speed of your computer.)
 
 ## Notes
 
-This was built and tested on Mac OS Lion and Mountain Lion. I haven't tested it at all on Windows.
+This was built and tested on Mac OS Lion, Mountain Lion, iOS 6 and iOS 7. I haven't tested it at all on Windows; it would probably require some refactoring of file system calls to work on Windows in the first place.
 
 I'm completely unclear on whether "file sharing" like this is considered illegal. It's a grey area. This works a lot like how local area network iTunes Library Sharing already works, which isn't illegal, but combined with the ease of Spotify in the browser. I'm not sure what to think. In `config.php` you will see that you have to restrict usage to certain IP ranges, most often your local network only, much the same way iTunes Library Sharing already works. I can guarantee that it's not a good idea to share your iTunes library over the entire internet.
 
 ## Known Bugs
 
-The playlist dropdown may be huge, I know. And for some reason certain song paths won't work, but I'm trying to figure it out. Also, there may be an issue playing high-bitrate mp3s. Again, not sure why.
+The playlist dropdown may be huge, depending on how many playlists you have. And for some reason certain song paths won't work, but I'm trying to figure it out. Also, there may be an issue playing high-bitrate mp3s. Again, not sure why.
 
 ## Features To Add
 
