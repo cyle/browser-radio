@@ -1,0 +1,49 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: "Helvetica", "Arial", san-serif;
+	font-size: 14px;
+}
+body > div {
+	width: 700px;
+	margin: 10px auto;
+}
+div#header {
+	
+}
+div#header h1 {
+	text-align: center;
+	font-size: 5em;
+	margin: 0.75em 0;
+}
+div#header p {
+	margin-bottom: 0.5em;
+}
+div#player-container {
+	
+}
+div#list {
+	
+}
+p#now-playing-text {
+	font-size: 2em;
+}
+div.song {
+	cursor: pointer;
+	padding: 3px;
+}
+div.song.playing {
+	background-color: #0f0;
+}
+div#song-page {
+	text-align: center;
+}
+div#song-page h1 {
+	font-size: 4em;
+}
+div#song-page audio {
+	width: 100%;
+	margin: 30px 0;
+}
