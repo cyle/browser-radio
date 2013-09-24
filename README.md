@@ -1,6 +1,8 @@
 # BROWSER RADIO~~~
 
-This makes your iTunes music library accessible via a web browser, complete with next/prev/random, playlists, sorting, and more!
+This makes your iTunes music library accessible via a web browser, complete with next/prev/random, playlists, sorting, and more! You manage your music and playlists in iTunes, but you can listen to all of it via a browser.
+
+Currently the only supported browsers are WebKit-based ones, such as Chrome, Safari, and Mobile Safari. Firefox doesn't support mp3 playback for some crazy reason.
 
 ## Requirements
 
@@ -43,3 +45,7 @@ The playlist dropdown may be huge, I know. And for some reason certain song path
 	- sort by artist and then album name and then track number ascending?
 	- sort by artist and then track name ascending?
 - search for tracks/artists
+
+## The Why
+
+Why did I build this? I was trying to hit two birds with one stone: first, I really hate iTunes built-in shuffle feature. It's not really that random at all. For someone who listens to music all day at work, this is very frustrating, and I couldn't find a satisfactory alternative. Secondly, iTunes built-in LAN sharing limits you to 5 users at once. I bounce around computers a lot, so I hit that 5 user max quickly, and it seems to "stick" for a long time. So even though I may only be connected in two places, iTunes "remembers" several old ones, making me need to restart iTunes a lot. Annoying. Plus, I don't always have access to an iTunes install. Thirdly, and I didn't intend on this feature, but the browser radio works great on my iPhone, so I can listen to my desktop iTunes library anywhere on the same network.
