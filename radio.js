@@ -30,7 +30,7 @@ function playSongAtIndex(index) {
 	//console.log(all_tracks[current_song_index]);
 	$('div.song').removeClass('playing');
 	$('#now-playing').html(all_tracks[current_song_index].artist + ' - ' + all_tracks[current_song_index].title);
-	$('#player').attr('src', all_tracks[current_song_index].file.replace('&', '%26'));
+	$('#player').attr('src', all_tracks[current_song_index].file.replace(/&/g, '%26'));
 	document.getElementById('player').play();
 	$('div.song[data-id="'+index+'"]').addClass('playing');
 	$('a#current-song-link').attr('href', song_url_base + '?a=' + all_tracks[current_song_index].artist + '&t=' + all_tracks[current_song_index].title);
